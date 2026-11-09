@@ -10,7 +10,7 @@ function Test() {
   return(
     <div>
       <StarRating  color='blue' maxRating={10} onSetRating={setMovieRating} />
-      <p>
+      <p style={{fontSize:'2rem'}}>
         This movie was rated {movieRating}{" "}
         {movieRating === 1 ? "star" : "stars"}.
       </p>
@@ -21,9 +21,9 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <App />
-    <StarRating maxRating={5} messages={['Terrible', 'Bad', 'Okay', 'Good', 'Amazing']} />
+    {/* <StarRating maxRating={5} messages={['Terrible', 'Bad', 'Okay', 'Good', 'Amazing']} />
     <StarRating size={24} color='#e71114' className="test" defaultRating={3} />
-
-    <Test />
+ */}
+    {/* <Test /> */}
   </React.StrictMode>
 );
